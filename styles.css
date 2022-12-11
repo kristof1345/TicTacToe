@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  color: rgb(201, 109, 255);
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(16, 19, 28);
+}
+
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#game-field {
+  width: 400px;
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell {
+  cursor: pointer;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background: transparent;
+  margin-bottom: 20px;
+  border: 2px solid rgb(201, 109, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cell[data-cell-index="0"] {
+  border-right: 1px solid rgb(201, 109, 255);
+  border-bottom: 1px solid rgb(201, 109, 255);
+}
+.cell[data-cell-index="1"] {
+  border-right: 1px solid rgb(201, 109, 255);
+  border-bottom: 1px solid rgb(201, 109, 255);
+}
+.cell[data-cell-index="2"] {
+  border-bottom: 1px solid rgb(201, 109, 255);
+}
+.cell[data-cell-index="3"] {
+  border-right: 1px solid rgb(201, 109, 255);
+  border-bottom: 1px solid rgb(201, 109, 255);
+}
+.cell[data-cell-index="4"] {
+  border-right: 1px solid rgb(201, 109, 255);
+  border-bottom: 1px solid rgb(201, 109, 255);
+}
+.cell[data-cell-index="5"] {
+  border-bottom: 1px solid rgb(201, 109, 255);
+}
+.cell[data-cell-index="6"] {
+  border-right: 1px solid rgb(201, 109, 255);
+}
+.cell[data-cell-index="7"] {
+  border-right: 1px solid rgb(201, 109, 255);
+}
